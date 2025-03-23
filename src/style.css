@@ -1,0 +1,201 @@
+:root {
+    --odin-blue: #247BA0;
+    --odin-black: #0a0908;
+    --odin-platinum: #E6E6E9;
+    --odin-gold: #F1C40F;
+    --odin-amaranth: #AF1B3F;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('./assets/fonts/Norse.woff') format('woff'),
+        url('./assets/fonts/Norsebold.woff') format('woff');
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+header {
+    width: 100%;
+    background-color: var(--odin-gold);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--odin-blue);
+    font-family: Norse;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+main h1,
+main h2,
+main h3 {
+    font-family: Norse;
+}
+
+section {
+    padding: 2rem;
+    margin: 0;
+    border: 0;
+}
+
+article {
+    width: 40vw;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    background-color: var(--odin-platinum);
+    margin: 0;
+    border: 0;
+    min-height: 100vh;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    font-size: 3rem;
+    font-family: Norse;
+    font-weight: bolder;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.pizzamenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pizzamenu>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.pizzamenu ul>li {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: white;
+}
+
+.pizzamenu ul>li>* {
+    padding: 1rem;
+}
+
+.price {
+    padding: 1rem;
+    background-color: var(--odin-blue);
+    color: white;
+    align-self: end;
+}
+
+footer {
+    max-height: 50px;
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    background-color: var(--odin-black);
+    color: var(--odin-platinum);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--odin-platinum);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    /* Smooth transition for color change */
+}
+
+footer a:hover {
+    color: white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    article {
+        width: 80vw;
+        text-align: center;
+    }
+
+    nav {}
+
+
+    .logo {
+        padding: 0rem;
+        flex: 1;
+        gap: 0.5em;
+    }
+
+    .logo p {
+        font-size: 2rem;
+    }
+
+    .logo img {
+        padding-left: 1rem;
+        width: 60px;
+    }
+
+    .pizzamenu {
+        text-align: left;
+    }
+}
