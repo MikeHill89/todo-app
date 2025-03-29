@@ -1,11 +1,1 @@
-:root {
-    --odin-blue: #247BA0;
-    --odin-black: #0a0908;
-    --odin-platinum: #E6E6E9;
-    --odin-gold: #F1C40F;
-    --odin-amaranth: #AF1B3F;
-}
-
-* {
-    box-sizing: border-box;
-}
+@import 'tailwindcss';
